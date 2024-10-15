@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="travel_recommendation.css"> <!-- Link to external CSS for additional styling -->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><img src="sources/airplane-02-stroke-rounded.svg" alt="Airplane Icon"></li>
+      <li><a href="travel_recommendation.html">Home</a></li> <!-- Link to Home Page -->
+      <li><a href="about_us.html">About Us</a></li> <!-- Link to About Us Page -->
+      <li><a href="contact_us.html">Contact Us</a></li> <!-- Link to Contact Us Page -->
+    </ul>
+
+    <!-- Search Bar and Buttons -->
+    <div>
+      <input type="text" id="searchBar" placeholder="Search for recommendations...">
+      <button id="searchButton">Search</button>
+      <button class="outlined" id="resetButton">Reset</button>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+  <main>
+    <section>
+    <div class="socials">
+        <a href=""><img src="sources/facebook.svg" alt="facebook" title="Facebook"></a>
+        <a href=""><img src="sources/instagram.svg" alt="instagram" title="Instagram"></a>
+        <a href=""><img src="sources/tiktok.svg" alt="tiktok" title="Tik-Tok"></a>
+        <a href=""><img src="sources/youtube.svg" alt="youtube" title="Youtube"></a>
+    </div>
+    <div class="container">
+    <div class="hero">
+    <h1>About Us</h1>
+    <p>We are passionate explorers dedicated to helping you discover the world’s most remarkable destinations. Whether you're seeking adventure, relaxation, or cultural immersion, we provide personalized recommendations and insider tips to make your journey unforgettable. Let us guide you to your next great experience!</p>
+    </div>
+    </div>
+    <div class="container">  
+        <div class="card-container">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Position: Travel Guide</p>
+                <p>John has over 10 years of experience guiding travelers through some of the world’s most exotic destinations.</p>
+                <button>Learn More</button>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Position: Adventure Specialist</p>
+                <p>Jane is passionate about adventure travel and helping clients find thrilling, once-in-a-lifetime experiences.</p>
+                <button>Learn More</button>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Team Member 3">
+                <h3>Michael Brown</h3>
+                <p>Position: Cultural Expert</p>
+                <p>Michael has a deep love for local cultures and crafts tailored itineraries for immersive cultural experiences.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section for displaying results -->
+    <section id="results">
+      
+    </section>
+  </main>
+
+  <!-- JavaScript File -->
+  <script src="travel_recommendation.js"></script> 
+  
+</body>
+</html>
