@@ -74,6 +74,17 @@ section {
     padding: 0 24px;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column; 
+    width: 35%;
+    padding: 0 24px;
+    justify-content: start; 
+    align-items: start;
+    margin-top: 64px;
+    margin-left: 64px;
+}
+
 /* Typography */
 h1, h2, p {
     color: #1f1f1f;
