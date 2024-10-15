@@ -1,0 +1,236 @@
+/* Global Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+
+/* Navigation Bar */
+nav {
+    /* background-color: #ffffff; */
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  }
+  
+nav ul {
+    list-style-type: none;
+  }
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+nav a:hover {
+    color: #66686a;
+    text-decoration: none;
+  }
+
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    background-image: url("sources/Traveler_Background.jpg");
+    background-size: cover;        
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;  
+    margin: 0;                
+}
+
+/* Section and Container Styles */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    width: 50%;
+    padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, p {
+    color: #1f1f1f;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: #595959;
+}
+
+/* Links */
+a {
+    color: #1890ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #66686a;
+}
+
+svg {
+    fill: #333; 
+}
+
+/* Form Elements */
+form {
+    margin-top: 20px;
+    min-width: 400px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    color: #333;
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+input::placeholder {
+    color: #C3C3C3; 
+    opacity: 1; 
+}
+
+/* Buttons */
+button {
+    padding: 8px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66686a;
+    color: white;
+}
+
+button:disabled {
+    color: #bfbfbf;
+    cursor: not-allowed;
+}
+
+.outlined {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #333; 
+    border: 2px solid #333; 
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.outlined:hover {
+    background-color: transparent;
+    color: #66686a; 
+    border: 2px solid #66686a; 
+}
+
+/* Container for Contact Form */
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #ffffff; 
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px; 
+    border: 1px solid #d9d9d9; 
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #333;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 576px) {
+    #contactForm {
+        padding: 16px;
+    }
+
+    #contactForm button {
+        padding: 10px 16px;
+    }
+}
