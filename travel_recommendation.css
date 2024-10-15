@@ -77,12 +77,12 @@ section {
 .hero {
     display: flex;
     flex-direction: column; 
-    width: 300px;
-    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+    padding: 64px;
     justify-content: start; 
     align-items: start;
-    margin-top: 64px;
-    margin-left: 64px;
+    margin: auto;
 }
 
 /* Typography */
