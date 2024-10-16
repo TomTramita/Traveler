@@ -98,6 +98,38 @@ section {
     margin: 0px;
 }
 
+#results {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    justify-content: space-between !important;
+    width: 332px;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+  }
+
+#results img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+#results h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#results p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
 /* Typography */
 h1, h2, p {
     color: #1f1f1f;
@@ -276,7 +308,7 @@ button:disabled {
 
 .card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-bottom: 16px;
 }
 

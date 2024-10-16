@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="travel_recommendation.css"> <!-- Link to external CSS for additional styling -->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><img src="sources/airplane-02-stroke-rounded.svg" alt="Airplane Icon"></li>
+      <li><a href="travel_recommendation.html">Home</a></li> <!-- Link to Home Page -->
+      <li><a href="about_us.html">About Us</a></li> <!-- Link to About Us Page -->
+      <li><a href="contact_us.html">Contact Us</a></li> <!-- Link to Contact Us Page -->
+    </ul>
+
+    
+  </nav>
+
+  <!-- Content Section -->
+  <main>
+    <section>
+    <div class="socials">
+        <a href=""><img src="sources/facebook.svg" alt="facebook" title="Facebook"></a>
+        <a href=""><img src="sources/instagram.svg" alt="instagram" title="Instagram"></a>
+        <a href=""><img src="sources/tiktok.svg" alt="tiktok" title="Tik-Tok"></a>
+        <a href=""><img src="sources/youtube.svg" alt="youtube" title="Youtube"></a>
+    </div>
+    <div class="container">
+    <div class="hero">
+    <h1>Contact Us</h1>
+    </div>
+    </div>
+    <div class="container">
+    <form id="contactForm" style="margin-top: 16px;">
+    <div style="background-color: #FFFFFF;">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div style="background-color: #FFFFFF;">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div style="background-color: #FFFFFF;">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" onclick="thankyou()">Submit</button>
+  </form>
+</div>
+    </section>
+
+    <!-- Section for displaying results -->
+    <section id="results">
+      
+    </section>
+  </main>
+
+  <!-- JavaScript File -->
+  <script src="travel_recommendation.js"></script> 
+  
+</body>
+</html>
