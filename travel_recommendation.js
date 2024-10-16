@@ -13,21 +13,33 @@ function searchKeyword() {
             // Store multiple search results
             let foundResults = [];
 
-            // Recursive search function to search the entire JSON
             function searchObject(obj) {
-                if (typeof obj === 'object' && obj !== null) {
+                if (Array.isArray(obj)) {
+                    // If the current object is an array, loop through each element
+                    for (let item of obj) {
+                        searchObject(item); // Recursively search each element of the array
+                        if (foundResults.length >= 2) return; // Stop once two results are found
+                    }
+                } else if (typeof obj === 'object' && obj !== null) {
+                    // If it's an object, loop through its keys
                     for (let key in obj) {
-                        if (typeof obj[key] === 'object') {
+                        if (typeof obj[key] === 'object' || Array.isArray(obj[key])) {
                             // Recursively search nested objects or arrays
                             searchObject(obj[key]);
-                        } else if (String(obj[key]).toLowerCase().includes(input)) {
-                            // Push the matching object to the results array
-                            foundResults.push(obj);
                             if (foundResults.length >= 2) return; // Stop once two results are found
+                        } else if (String(obj[key]).toLowerCase().includes(input)) {
+                            // Check if this object has already been added to foundResults
+                            if (!foundResults.some(result => result.name === obj.name)) {
+                                // If not already added, push the entire object (city, country, temple, etc.) to foundResults
+                                foundResults.push(obj);
+                                if (foundResults.length >= 2) return; // Stop once two results are found
+                            }
                         }
                     }
                 }
             }
+            
+            
 
             // Perform the search
             searchObject(data);
@@ -90,7 +102,7 @@ function localTime(city) {
         'Brazil': 'America/Sao_Paulo',
         'Rio de Janeiro, Brazil': 'America/Sao_Paulo',
         'Sao Paulo, Brazil': 'America/Sao_Paulo',
-        'Copacabana, Brazil': 'America/Sao_Paulo',
+        'Copacabana Beach, Brazil': 'America/Sao_Paulo',
         'Taj Mahal, India': 'Asia/Kolkata',
         'Angkor Wat, Cambodia': 'Asia/Bangkok',
         'Bora Bora, French Polynesia': 'Pacific/Bora_Bora'
